@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<!--
+	Axiom by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Transfer 401(k)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<div>
+									<h1><a href="#">Squee</a></h1>
+									<span>A helper database for LUMS</span>
+								</div>
+							</div>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Introduction</a></li>
+								<li>
+									<a href="#">Contributions</a>
+									<ul>
+										<li><a href="contrib_ee.html">Employee Processing</a></li>
+									</ul>
+
+								</li>
+								<li  class="current_page_item"><a href="#">Fund Transfers</a>
+									<ul>
+										<li class="current_page_item"><a href="contrib_er.html">401(k)</a></li>
+									</ul>
+									
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main" class="container">
+					<div class="row">
+						<div class="col-12">
+							<article id="content">
+								<header><h2>Funds Transfer - 401(k)</h2></header>
+								<p>
+									EE and ER 401(k) account are funded weekly, under most circumstances on Wednesday. Sometimes Tom will request that an
+									out of cycle transfer to close the calendar month.
+								</p>
+								<!--**start EE ERF using Squee**-->
+								<h3>Processing a 401(k) Funds Transfer with Squee</h3>
+								<p>
+									Here are the steps for sending a funding request to Prudential Retirement.  You must have authorization to send secure
+									mail to Payroll Express as well as access the Prudential Sponsor Center website.
+								</p>
+								<div style="border:solid; border-radius: 2ch; border-color: black; border-style: solid;">
+									<p>
+										Instructions are color coded:<br>
+										<span class="inLUMS">Instructions or steps to be done in LUMS look like this.</span><br>
+										<span class="inSquee">Instructions or steps to be done in Squee look like this.</span> 
+									</p>
+								</div>
+									<div class="step-by-step"></div>
+										<ol> 
+											<li>Create a new Transfer in Squee</li>
+												<ul>												
+													<li><span class="inSquee">Use the form navigator to go to PruTransfer</span></li>
+													<li><span class="inSquee">Click on the Add Date button.</span>
+														<ol>
+															<li>Squee will ask you to confirm a transfer date, you can change it if you need to.</li>
+														</ol>
+													</li>
+												</ul>	
+											<li><h4>Add ER batches that are ready to transfer.</h4></li>
+												<ul>
+													<li><span class="inSquee">Click on the ER tab.</span></li>
+													<li><span class="inSquee">Double click on batches in the available list box to move it to the ? list box.</span></li>
+													<ol>
+														<li><span class="inSquee">If it does not move no reports are in lums note to self just make a message for this.</span></li>
+														<li><span class="inSquee">Sometimes only some of the money will move another not to self.</span></li>
+														<li>Squee will tell you with a pop-up message if the entire batch is not being moved to the transfer.</li>
+													</ol>
+												</ul>
+											<li><h4>Add EE batches that are ready to transfer</h4></li>
+												<ul>
+													<li><span class="inSquee">Click on the EE tab.</span></li>
+													<li><span class="inSquee">Follow the same steps as adding ER batches.</span></li>
+												</ul>
+												<li><h4>Check that RA Edit workspace is empty</h4></li>											
+												<ul>
+													<li><span class="inLUMS">In LUMS go to Receipts & Adjustments / </span></li>
+													<li><span class="inLUMS">Keystrokes: 4 => {Enter}</span></li>
+													<li><span class="inLUMS">If the workspace is empty, nothing will happen. If you get the
+														? prompt, there is something already in the workspace and you need to clear it.
+														</span>
+														<div class="tip"><span class="icon far fa-lightbulb"></span>
+															&nbsp;Really, when nothing happnes that's <u>a good thing</u>.
+														</div>
+													</li>
+												</ul>
+												<li><h4>Check that Squee is in balance with LUMS</h4>	
+												<ul>
+													<li>In LUMS run the <span title="Fund Detail Listing / {4} => {Enter}"><a href="#">Fund Detail Listing</a></span> for
+														the 401(k) fund pending money.</li>
+													<li>Check the LUMS total against the Squee total.</li>
+													<li>
+														If Squee and LUMS are in agreement continue with process. If not follow the
+														<span title="working on it"><a>Pru Transfer Troubleshooting Guide</a></span>
+													</li>
+												</ul>
+												<li><h4>Run the Fund Detail Listing</h4></li>
+													<ol>
+														<li><span class="inLUMS">In LUMS go to Fund Detail Listing /  </span></li>
+														<li><span class="inLUMS">Keystrokes: 4 => {Enter}</span></li>
+														<li>A .pdf of the report will open. The report total must match the transfer total.</li>
+													</ol>	
+												<li>Run file build</li>
+													<ol>
+														<li><span class="inLUMS">In LUMS go to Fund Detail Listing /  </span></li>
+														<li><span class="inLUMS">Keystrokes: 4 => {Enter}</span></li>
+														<li>A .pdf of the report will open. The report total must match the transfer total.</li>
+														<li>
+															In Squee input the EE $ total, ER $ total and ER hours total. They all have a place on the
+															Details tab.
+														</li>
+													</ol>	
+												<li>Run Receipts and Adjustments Edit</li>
+													<ol>
+														<li><span class="inLUMS">In LUMS go to Fund Detail Listing /  </span></li>
+														<li><span class="inLUMS">Keystrokes: 4 => {Enter}</span></li>
+														<li>A .pdf of the report will open. The report total must match the transfer total.</li>
+													</ol>												
+												<li>Run Receipts and Adjustments Update</li>
+													<ol>
+														<li><span class="inLUMS">In LUMS go to Fund Detail Listing /  </span></li>
+														<li><span class="inLUMS">Keystrokes: 4 => {Enter}</span></li>
+
+														<li>A .pdf of the report will open. The report total must match the transfer total.</li>
+													</ol>
+												</li>
+												<li>Run teh Fund Detail Listing again</li>
+													<ol>
+														<li><span class="inLUMS">In LUMS go to Fund Detail Listing /  </span></li>
+														<li><span class="inLUMS">Keystrokes: 4 => {Enter}</span></li>
+
+														<li>A .pdf of the report will open. The report total must match the transfer total.</li>
+													</ol>
+												</li>
+												
+										</ol>				
+									</div> <!-- end of 'step-by-step' -->
+
+								<header><h2>Processing Employer Reports <u>without</u> Squee</h2></header>
+								<h3></h3>
+								<p>
+									Here are the steps for processing the transfer without Squee. There are a couple extra steps. You need to update both the
+									EE and ER batch logs.  manually sum the batch reports and use those totals to see if you are in balance.
+								</p>
+							</article>
+
+
+
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Newsletter -->
+				<div id="newsletter" class="container">
+					<section>
+						<header>
+							<h2>Morbi insem uisdui</h2>
+							<span class="byline">Vivamus vestibulum nulla nec ante</span>
+						</header>
+						<form method="post" action="#" id="subscribe">
+							<input type="text" class="text" name="search" placeholder="Email address" />
+							<a href="#" class="button">Submit</a>
+						</form>
+					</section>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer" class="container">
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+							<span class="copyright">&copy; Untitled. All rights reserved.</span>
+						</div>
+						<div class="col-6 col-12-narrower">
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-facebook-f"><span>Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-twitter"><span>Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-google-plus-g"><span>Google+</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.slidertron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
