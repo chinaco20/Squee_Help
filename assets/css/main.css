@@ -3200,11 +3200,15 @@ input, select, textarea {
 	}
 
 	.inLUMS{
-		font-style: italic;
+		line-height: .75;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: 550;
 		color:red;
 	}
 
 	.inSquee{
-		font-style: italic;
-		color:rgb(7, 150, 79);
+		line-height: .75;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: 550;
+		color:green;
 	}
