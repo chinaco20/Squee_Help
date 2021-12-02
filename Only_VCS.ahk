@@ -8,14 +8,17 @@ SetTitleMatchMode 2
 
 
 #IfWinActive Visual Studio Code
-::inll::<span class="inLUMS"></span>
-::inss::<span class="inSquee"></span>
+::pinll::<p class="instrInLUMS"></p>
+::pinss::<p class="instrInSquee"></p>
+::pinss::<p class="instrInSteps"></p>
 ::li4::<li><h4></li></h4>
 ::tipp::
 send, <div class="tip"><span class="icon far fa-lightbulb"></span>
 send, {Enter}
 send, </div>
 return
+
+
 #IfWinActive
 
 

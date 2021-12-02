@@ -33,9 +33,6 @@ body {
 	line-height: 1;
 }
 
-div.step-by-step > ol{
-	font-weight: bold;
-}
 
 
 ol, ul {
@@ -156,13 +153,6 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-.tip  {
-	border-left: solid 0.5em #ddd;
-	padding: .15em 0 0 .15em;
-	font-style: italic;
-	margin-top: .5em;
-	margin-bottom: .5em;
-}
 
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
@@ -3199,16 +3189,57 @@ input, select, textarea {
 
 	}
 
-	.inLUMS{
+
+		
+
+	div.step-by-step ol > li {
+
+		color: black;
+		font-size: 1.15em;
+		font-weight: 550;
+
+	}
+
+	div.step-by-step ol > li ~ ul {
+
+		color: blue;
+		font-weight: 900;
+
+	}
+
+	p.instrInLUMS {
 		
 		font-family: 'Courier New', Courier, monospace;
 		font-weight: 600;
 		color:red;
+		line-height: 125%;
+				
+		
 	}
 
-	.inSquee{
+	p.instrInSquee{
 		
 		font-family: 'Courier New', Courier, monospace;
 		font-weight: 600;
 		color:green;
+		line-height: 125%;
+		margin-bottom: .25em;
+		margin-top: .25em;
 	}
+
+	p.instrInSteps{
+		
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: 600;
+		color:black;
+		line-height: 125%;
+	}
+	
+
+	.tip  {
+		padding: .15em 0 0 .15em;
+		font-style: italic;
+		margin-top: .5em;
+		margin-bottom: .5em;
+	}
+	

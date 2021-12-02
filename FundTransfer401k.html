@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -71,38 +72,38 @@
 								<div style="border:solid; border-radius: 2ch; border-color: black; border-style: solid; padding: .2em 2em">
 									<p>
 										Instructions are color coded:<br>
-										<span class="inLUMS">Instructions or steps to be done in LUMS look like this.</span><br>
-										<span class="inSquee">Instructions or steps to be done in Squee look like this.</span> 
+										<span class="instrInLUMS">Instructions or steps to be done in LUMS look like this.</span><br>
+										<span class="instrInSquee">Instructions or steps to be done in Squee look like this.</span> 
 									</p>
 								</div>
 
-									<div class="step-by-step"></div>
+									<div class="step-by-step">
 										<ol> 
-											<li><h4>Create a new Transfer in Squee</h4></li>
+											<li>Create a new Transfer in Squee</li>
 												<ul>												
-													<li><span class="inSquee">Click the Prudential button in the form navigator.</span></li>
-													<li><span class="inSquee">Click on the <text style="color:#FF99CC;">pink</text> Add New Transfer button.</span>
+													<li><p class="instrInSquee">Click the Prudential button in the form navigator.</p></li>
+													<li><p class="instrInSquee">Click on the <text style="color:#FF99CC;">pink</text> Add New Transfer button.</p>
 														<ol>
-															<li><span class="inSquee">A pop-up form with an anticipated transfer date will appear and 
-																ask you to confirm.  At that time you can can change the date if you need to.</span></li>
-															<li><span class="inSquee">Make sure the correct transfer is selected in the transfers list box.</span></li>
+															<li><p class="instrInSquee">A pop-up form with an anticipated transfer date will appear and 
+																ask you to confirm.  At that time you can can change the date if you need to.</p></li>
+															<li><p class="instrInSquee">Make sure the correct transfer is selected in the transfers list box.</p></li>
 														</ol>		
 													</li>
 												</ul>	
 											
-											<li><h4>In Squee add ER batches that are ready to transfer.</h4></li>
+											<li>In Squee add ER batches that are ready to transfer.</li>
 												<ul>
-													<li><span class="inSquee">Click on the ER Log tab.</span></li>
-													<li><span class="inSquee">Double click on a batch in the Pending list box to move it to the Assigned list box.
+													<li><p class="instrInSquee">Click on the ER Log tab.</p></li>
+													<li><p class="instrInSquee">Double click on a batch in the Pending list box to move it to the Assigned list box.
 														Double click any Assigned batch to send it back to Pending.
-													</span></li>
+													</p></li>
 													<ol>
-														<li><span class="inSquee">
+														<li><p class="instrInSquee">
 															Squee will let you know with a pop-up message if all of the reports in the batch are
 															being added to this transfer. (should i take this part out? and remove the pop-up notification
 															in Squee?)
-														</span></li>
-														<div class="tip"><span class="icon far fa-lightbulb"></span>
+														</p></li>
+														<div class="tip"><span class="fa fa-info-circle"></span>
 															&nbsp;In Squee you are assigning "batches", but in the background Squee is only including
 															reports that have not been in a previous Prudential funds transfer <u><i>and</i></u> has a
 															LUMS Report Number signifying the report was uploaded to LUMS.
@@ -110,20 +111,22 @@
 													</ol>
 												</ul>
 
-											<li><h4>In Squee add EE batches that are ready to transfer</h4></li>
+											<li>In Squee add EE batches that are ready to transfer</li>
 												<ul>
-													<li><span class="inSquee">Click on the EE tab.</span></li>
-													<li><span class="inSquee">Follow the same steps as adding ER batches.</span></li>
+													<li><p class="instrInSquee">Click on the EE tab.</p></li>
+													<li><p class="instrInSquee">Follow the same steps as adding ER batches.</p></li>
 												</ul>
-												<li><h4>Check that RA Edit workspace is empty</h4>									
+												<li>Check that RA Edit workspace is empty									
 													<ul>
-														<li><span class="inLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Receipts & Adjustments
+														<li><p class="instrInLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Receipts & Adjustments
 															/ Receipts & Adjustments Edit
-														</span></li>
-														<li><span class="inLUMS">Keystrokes to type: 4 => {Enter}</span></li>
-														<li><span class="inLUMS">If the report runs and a .pdf is created then there is an EE batch that was
-															not updated and needs to be taken care of first.
-															</span>
+														</p></li>
+														<li><p class="instrInLUMS">Keystrokes to type: 4 => {Enter}</p></li>
+														<li>
+															<p class="instrInLUMS">
+																If the report runs and a .pdf is created then there is an EE batch that was
+																not updated and needs to be taken care of first.
+															</p> 
 														</li>
 														<div class="tip"><span class="icon far fa-lightbulb"></span>
 															&nbsp;Really, nothing happening for this step is <em><b>good</b></em>. That's just how LUMS
@@ -132,24 +135,24 @@
 													</ul>
 												</li>
 
-											<li><h4>In LUMS run the Fund Detail Listing</h4></li>	
+											<li>In LUMS run the Fund Detail Listing</li>	
 												<ul>
-													<li><span class="inLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Fund Detail Processing
-														/ Fund Detail Listing</span></li>
-													<li><span class="inLUMS">Keystrokes to type: 4 => {Enter} => S {Enter} => Y => {Enter} V => {Enter}</span></li>
+													<li><p class="instrInLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Fund Detail Processing
+														/ Fund Detail Listing</p></li>
+													<li><p class="instrInLUMS">Keystrokes to type: 4 => {Enter} => S {Enter} => Y => {Enter} V => {Enter}</p></li>
 													<li>A .pdf of the report will open. DO NOT CLOSE it, we need to save it later.</li>
-													<li>The <span class="inLUMS">LUMS report total</span> must match the <span class="inSquee">Squee transfer
+													<li>The <p class="instrInLUMS">LUMS report total</span> must match the <span class="instrInSquee">Squee transfer
 														total</span>.</li>
 													<li>This is the 1st run of this report, we will be doing one more after the file build.</li>
-													<div class="tip"><span class="icon far fa-lightbulb"></span>
+													<div class="tip"><p class="icon far fa-lightbulb"></span>
 														&nbsp;The total is on the second to the last and last page.
 													</div>
 
 												</ul>
 												
-											<li><h4>Check that Squee and LUMS are in agreement for the transfer</h4></li>		
+											<li>Check that Squee and LUMS are in agreement for the transfer</li>		
 												<ul>
-													<li><span class="inLUMS">In LUMS run the Fund Detail Listing for the 401(k) fund pending money.</span></li>
+													<li><p class="instrInLUMS">In LUMS run the Fund Detail Listing for the 401(k) fund pending money.</p></li>
 													<li>Check the LUMS total against the Squee total.</li>
 													<li>
 														If Squee and LUMS are in agreement continue with process. If not follow the
@@ -157,12 +160,12 @@
 													</li>
 												</ul>
 
-											<li><h4>In LUMS run the transfer file build (401k Enrollment - Prudential)</h4></li>
+											<li>In LUMS run the transfer file build (401k Enrollment - Prudential)</li>
 												<ul>
-													<li><span class="inLUMS">LUMS Navigation: Main Menu / CIGNA Transfers / 401k Enrollment - Prudential</span></li>
-													<li><span class="inLUMS">Keystrokes to type: [today's Month(2 digits)][today's Year(2 or 4 digits)]
-														=> {Enter} => [the number that corresponds to <span class="inSquee">Last EE PPE date in Squee</span>]
-														=> {Enter} => Y => {Enter} => V => {Enter} => Y => {Enter}</span></li>
+													<li><p class="instrInLUMS">LUMS Navigation: Main Menu / CIGNA Transfers / 401k Enrollment - Prudential</p></li>
+													<li><p class="instrInLUMS">Keystrokes to type: [today's Month(2 digits)][today's Year(2 or 4 digits)]
+														=> {Enter} => [the number that corresponds to <span class="instrInSquee">Last EE PPE date in Squee</span>]
+														=> {Enter} => Y => {Enter} => V => {Enter} => Y => {Enter}</p></li>
 													<li>note to self: need to explain more on the last few keystrokes. need to explain how to abort (remove from RA Edit)
 														a bad transfer file build.
 													</li>
@@ -172,28 +175,28 @@
 														around them.
 													</li>
 														<ol>
-															<li>Put <span class="inLUMS">Employer 401k for [work month]
-																</span>amount into the <span class="inSquee">LUMS ER field</span>
+															<li>Put <p class="instrInLUMS">Employer 401k for [work month]
+																</span>amount into the <span class="instrInSquee">LUMS ER field</span>
 															</li>
-															<li>Put <span class="inLUMS">Participant 401k for [work month]
-																</span>amount into the <span class="inSquee">LUMS ER field</span>
+															<li>Put <p class="instrInLUMS">Participant 401k for [work month]
+																</span>amount into the <span class="instrInSquee">LUMS ER field</span>
 															</li>
-															<li>Put <span class="inLUMS">Employer 401k Hours for [work month]
-																</span>amount into the <span class="inSquee">LUMS R/A Hours field</span>
+															<li>Put <p class="instrInLUMS">Employer 401k Hours for [work month]
+																</span>amount into the <span class="instrInSquee">LUMS R/A Hours field</span>
 															</li>
 														</ol>
-													<li><span class="inSquee">The Discrepancy fields should be $0.00. If not you have a problem.</span></li>
+													<li><p class="instrInSquee">The Discrepancy fields should be $0.00. If not you have a problem.</p></li>
 												</ul>	
 											
-											<li><h4>In LUMS run the build verification (Prudential 401(k) Verification</h4></li>
+											<li>In LUMS run the build verification (Prudential 401(k) Verification</li>
 												<ul>
-													<li><span class="inLUMS">LUMS Navigation: Main Menu / CIGNA Transfers / Prudential 401(k) Verification </span></li>
-													<li><span class="inLUMS">Keystrokes to type: [today's Month(2 digits)][today's Year(2 or 4 digits)]</span></li>
-													<li><span class="inLUMS">With LUMS Helper open, hit Ctrl & P.</span></li>
+													<li><p class="instrInLUMS">LUMS Navigation: Main Menu / CIGNA Transfers / Prudential 401(k) Verification </p></li>
+													<li><p class="instrInLUMS">Keystrokes to type: [today's Month(2 digits)][today's Year(2 or 4 digits)]</p></li>
+													<li><p class="instrInLUMS">With LUMS Helper open, hit Ctrl & P.</p></li>
 														<ol>
 															<li>An MS Word document will open with a PrintScreen of the LUMS window results for backup.</li>
 														</ol>
-													<li><span class="inLUMS">With the same LUMS form in focus, hit {Enter}.</span></li>
+													<li><p class="instrInLUMS">With the same LUMS form in focus, hit {Enter}.</p></li>
 													<ol>
 														<li>The LUMS window should close. That is the good scenario.</li>
 														<div class="tip"><span class="icon far fa-lightbulb"></span>
@@ -207,31 +210,34 @@
 													</ol>
 												</ul>
 
-											<li><h4>In LUMS run Receipts and Adjustments Edit</h4></li>
+											<li>In LUMS run Receipts and Adjustments Edit</li>
 												<ul>
-													<li><span class="inLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Receipts & Adjustments
+													<li><p class="instrInLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Receipts & Adjustments
 														/ Receipts & Adjustments Edit
-													</span></li>
-													<li><span class="inLUMS">Keystrokes to type: {Enter} => {Enter} => {Enter}</span></li>
+													</p></li>
+													<li><p class="instrInLUMS">Keystrokes to type: {Enter} => {Enter} => {Enter}</p></li>
 													<li>A .pdf of the report will open. DO NOT CLOSE it, we need to save it later.</li>
 													<li>You can check the total if you want but it shouldn't matter</li>
 												</ul>
 											
-											<li><h4>In LUMS run Receipts and Adjustments Update</h4></li>
+											<li>In LUMS run Receipts and Adjustments Update</li>
 												<ul>
-													<li><h4>This step will make the file build permanent. If you closed these supporting docs from LUMS they cannot
+													<li>This step will make the file build permanent. If you closed these supporting docs from LUMS they cannot
 														be recreated after this step: 1st Fund Detail Listing, File Build, Build Verification and RA Edit.
-													</h4></li>
-													<li><span class="inLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Receipts & Adjustments
-														/ Receipts & Adjustments Update
-													</span></li>
-													<li><span class="inLUMS">Keystrokes to type: {Enter} => {Enter} => {Enter} => <span class="inSquee">[the
-														R/A Confirm total from Squee]</span></span></li>
+													</li>
+													<li>
+														<p class="instrInLUMS">
+															LUMS Navigation: Main Menu / Labor Union Processing / Receipts & Adjustments
+															/ Receipts & Adjustments Update
+														</p>
+													</li>
+													<li><p class="instrInLUMS">Keystrokes to type: {Enter} => {Enter} => {Enter} => <span class="instrInSquee">[the
+														R/A Confirm total from Squee]</span></p></li>
 														<div class="tip"><span class="icon far fa-lightbulb"></span>&nbsp;
 															If you have LUMS Helper open you can just copy and paste the  verification amount must be a negative number.
 														</div> 
 
-														<div class="tip"><span class="icon far fa-lightbulb"></span>
+														<div class="tip"><span class="fa fa-info-circle fa-lg"></span>
 														
 														</div>
 														
@@ -242,16 +248,16 @@
 
 												</ul>
 											</li>
-											<li><h4>Run the Fund Detail Listing again</h4></li>
+											<li>Run the Fund Detail Listing again</li>
 												<ol>
-													<li><span class="inLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Fund Detail Processing
-														/ Fund Detail Listing</span></li>
-													<li><span class="inLUMS">Keystrokes to type: 4 => {Enter} => S {Enter} => Y => {Enter} V => {Enter}</span></li>
+													<li><p class="instrInLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Fund Detail Processing
+														/ Fund Detail Listing</p></li>
+													<li><p class="instrInLUMS">Keystrokes to type: 4 => {Enter} => S {Enter} => Y => {Enter} V => {Enter}</p></li>
 													<li>A .pdf of the report will open. DO NOT CLOSE it, we need to save it later.</li>
 												</ol>
 											</li>
 
-											<li><h4>Save All the Supporting Docs</h4></li>
+											<li>Save All the Supporting Docs</li>
 												<p>All suporting docs are stored in the network folder:<br>
 													\\HBAI2012SRVR\transfer\401(k)\Prudential File Transmissions\Prudential 401k Weekly Transfers\[Current Year]
 													Prudential Transfers<br>
@@ -310,24 +316,24 @@
 														</tr>
 													</tbody>
 												</table>
-											<li><h4>This would be when you do lost earnings</h4></li>
+											<li>This would be when you do lost earnings</li>
 												<ul>skipping this for now.</ul>
-											<li><h4>Send Tom an Email and Give Him a Copy</h4></li>
+											<li>Send Tom an Email and Give Him a Copy</li>
 												<ul>
 													<li>Open a blank email.</li>
 													<li>In the 'To' line type in "tompayexp"</li>
 														<ol>
 															<li>LUMS helper will create the template email body.</li>
 														</ol>
-													<li><span class="inSquee">In Squee at the bottom right of the Prudential form you will see a long
+													<li><p class="instrInSquee">In Squee at the bottom right of the Prudential form you will see a long
 														wide purple button titled Copy Totals to Clipboard. Click it to copy the totals in the box
 														right below it.
-													</span></li>
+													</p></li>
 													<li>Go back to the email and paste where it says [Paste Squee totals here].</li>
 													<li>Send the email to Tom.</li>
 													<li>Print a copy of the sent email and hand to him as well.</li>
 												</ul>
-											<li><h4>Send email to let everyone know it is ok to key batches into LUMS now</h4></li>
+											<li>Send email to let everyone know it is ok to key batches into LUMS now</li>
 												<ul>
 													<li>Open a new email in Outlook.</li>
 													<li>In the <u>To:</u> line type 'trasarpau'.</li>
@@ -335,7 +341,7 @@
 														<li>LUMS Helper will autofill the email.</li>
 													</ol>
 												</ul>
-											<li><h4>At 10:00 a.m. Send Funding Request by Secure Mail</h4></li>
+											<li>At 10:00 a.m. Send Funding Request by Secure Mail</li>
 												<p>Sending the transfer file earlier could very well result in the funding request settling the next day, which does
 													not give Tom enough time to do the funds transfer with First Hawaiian Bank. Much later and the ACH debit
 													may settle in 3 business days. On the normal cycle that would be a Monday. Issues with closing the month? 
@@ -359,7 +365,7 @@
 													<li>In the To field type "pex", yes another hotstring for payroll.express@prudential.com.</li>
 													<li>change to cc address to your email address.</li>
 												</ul>
-											<li><h4>You will receive 2 email confirmations</h4></li>
+											<li>You will receive 2 email confirmations</li>
 												<p>You get two email confirmations. One a few minutes after you send the secure mail. This only confirms that they
 													received the email and attachment but it is not confirming the request is good and that the ACH Debit will be
 													set up. That comes about 2 hours later if all has gone as planned.
@@ -375,16 +381,16 @@
 																request total and this one we save as backup. When you save as into the backup folder type in
 																the hotsting "prufun".
 															</li>
-															<li><span class="inSquee">Back to Prutential, check the box at the top left of Details tab. It is the
+															<li><p class="instrInSquee">Back to Prutential, check the box at the top left of Details tab. It is the
 																check box to the left of 'Sent To Prudential'.
-																</span></li>
+																</p></li>
 																<div class="tip"><span class="icon far fa-lightbulb"></span>
 																	&nbsp;This step turns off the alert in Squee asking if the transfer file was sent. It also triggers
 																	a function that changes the file named 767258CC to 767258CC_sent_[today's date].
 																</div>
 														</ol>
 												</ul>
-											<li><h4>Send Email to Tom with ACH Debit Date</h4></li>
+											<li>Send Email to Tom with ACH Debit Date</li>
 												<p>When you get the funding email, you will also be able to see the funiding shit on the pru website.</p>
 												<ul>
 													<li>Open email sent to tom earlier and forward it.</li>
