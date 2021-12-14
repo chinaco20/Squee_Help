@@ -162,14 +162,31 @@ input, select, textarea {
 		margin-bottom: 1em;
 	}
 
-		header h2 {
+	header h1 {
+		display: block;
+		margin: 0em;
+		padding: 0em;
+		letter-spacing: 0.05em;
+		font-size: 1.8em;
+		font-weight: 700;
+	}
+	header h2 {
 			display: block;
 			margin: 0em;
 			padding: 0em;
 			letter-spacing: 0.05em;
-			font-size: 1.6em;
+			font-size: 1.2em;
 			font-weight: 700;
 		}
+
+	header h3 {
+		display: block;
+		margin: 0em;
+		padding: 0em;
+		letter-spacing: 0.05em;
+		font-size: 1.1em;
+		font-weight: 700;
+	}
 
 		header .byline {
 			display: block;
@@ -3192,7 +3209,7 @@ input, select, textarea {
 
 		
 
-	div.step-by-step ol > li {
+	div.step-by-step ol {
 
 		color: black;
 		font-size: 1.15em;
@@ -3200,14 +3217,14 @@ input, select, textarea {
 
 	}
 
-	div.step-by-step ol > li ~ ul {
+	div.step-by-step ol > li + ul {
 
 		color: blue;
 		font-weight: 900;
 
 	}
 
-	p.instrInLUMS {
+	.instrInLUMS {
 		
 		font-family: 'Courier New', Courier, monospace;
 		font-weight: 600;
@@ -3217,7 +3234,7 @@ input, select, textarea {
 		
 	}
 
-	p.instrInSquee{
+	.instrInSquee{
 		
 		font-family: 'Courier New', Courier, monospace;
 		font-weight: 600;
@@ -3243,3 +3260,22 @@ input, select, textarea {
 		margin-bottom: .5em;
 	}
 	
+
+.quick-start {
+	/* to distinguish an outliine from the step-by-step style */
+	font-weight: 550;
+	line-height: 125%;
+	padding-left: 2em;
+	margin-bottom: 3em;
+	
+}
+
+.instructions {
+	/*  */
+	padding-left: 2em;
+	padding-right: 2em;
+
+
+
+
+}

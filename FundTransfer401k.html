@@ -52,37 +52,72 @@
 
 			<!-- Main -->
 				<div id="main" class="container">
-					<div class="row">
-						<div class="col-12">
-							<article id="content">
-								<header><h2>401(k) Fund Transfer</h2></header>
+					<div class="instructions">
+
+								<header><h1>401(k) Fund Transfer</h1></header>
 								<p>
-									401(k) money poseted in LUMS, both EE and ER, is held in a pending bucket to be funded to individual Prudential Retirement accounts every
-									Wednesday. Sometimes Tom will request that an out of cycle transfer be done to close the calendar month. A major warning,
-									the LUMS produced suporting docs <b><u>cannot be recreated</u></b> once you are done. If you do not save them they are gone forever. Getting John Graas to undo
-									the file build will likely take 2 days.  The timing is funding request on Wedenesday @ 10:00am means ACH Debit on the Friday.
+									Both ER and EE money posted in LUMS for the 401(k) fund are in a pending bucket. The pending money is funded to individual
+									member accounts every Wednesday. Sometimes Tom will request an out of cycle transfer be done in order to cleanly close the
+									calendar month. The the funding request is sent on Wedenesday @ 10:00am HST triggereing an ACH Debit on the Friday. This timing is
+									important for the ACH Debit funding to go smoothly.
+								</p>
+								<p>
+									<text style="font: italic small-caps bold 12px/30px;"><b><u>A Major Warning</u>:</b></text> the suporting docs that come from LUMS
+									<b>cannot be recreated</b> once you are done. If you do not save them they are gone forever (almost). The only way to undo the process
+									to fix an error or redo reports is by intervention from John Graas, and could take 2 days.
 								</p>
 								<!--**start EE ERF using Squee**-->
-								<h3>Processing a 401(k) Funds Transfer with Squee</h3>
+								<header><h2>Processing a 401(k) Funds Transfer with Squee</h2></header>
 								<p>
 									Here are the steps for sending a funding request (transfer file build) to Prudential Retirement.  You must have authorization to send secure
 									mail to Payroll Express as well as access the Prudential Sponsor Center website. Also, have your LUMS Helper open as it
 									will make certain steps much easier.
-								</p>								
-								<div style="border:solid; border-radius: 2ch; border-color: black; border-style: solid; padding: .2em 2em">
+								</p>
+								<header><h3><u>Quick Start</u></h3></header>
+								<p>
+
+								</p>
+								<p>
+									<div class="quick-start">
+										<ol> 
+											<li>Create a new Transfer in Squee</li>
+											<li>In Squee add ER batches that are ready to transfer.</li>
+											<li>In Squee add EE batches that are ready to transfer</li>
+											<li>In LUMS run the Fund Detail Listing</li>	
+											<li>Check that Squee and LUMS are in agreement for the transfer</li>		
+											<li>In LUMS run the transfer file build (401k Enrollment - Prudential)</li>
+											<li>In LUMS run the build verification (Prudential 401(k) Verification</li>
+											<li>In LUMS run Receipts and Adjustments Edit</li>
+											<li>In LUMS run Receipts and Adjustments Update</li>
+											<li>Run the Fund Detail Listing again</li>
+											<li>Save All the Supporting Docs</li>
+											<li>This would be when you do lost earnings</li>
+											<li>Send Tom an Email and Give Him a Copy</li>
+											<li>Send email to let everyone know it is ok to key batches into LUMS now</li>
+											<li>At 10:00 a.m. Send Funding Request by Secure Mail</li>
+											<li>You will receive 2 email confirmations</li>
+											<li>Send Email to Tom with ACH Debit Date</li>
+										</ol>				
+									</div> <!-- end of 'step-by-step' -->
+								</p>
+
+
+								<header><u><h3>Step by Step</h3></u></header>								
+
+
 									<p>
 										Instructions are color coded:<br>
 										<span class="instrInLUMS">Instructions or steps to be done in LUMS look like this.</span><br>
 										<span class="instrInSquee">Instructions or steps to be done in Squee look like this.</span> 
 									</p>
-								</div>
 
 									<div class="step-by-step">
+
 										<ol> 
 											<li>Create a new Transfer in Squee</li>
 												<ul>												
 													<li><p class="instrInSquee">Click the Prudential button in the form navigator.</p></li>
-													<li><p class="instrInSquee">Click on the <text style="color:#FF99CC;">pink</text> Add New Transfer button.</p>
+													<li><p class="instrInSquee">Click on the Add New Transfer button.</p>
 														<ol>
 															<li><p class="instrInSquee">A pop-up form with an anticipated transfer date will appear and 
 																ask you to confirm.  At that time you can can change the date if you need to.</p></li>
@@ -141,10 +176,10 @@
 														/ Fund Detail Listing</p></li>
 													<li><p class="instrInLUMS">Keystrokes to type: 4 => {Enter} => S {Enter} => Y => {Enter} V => {Enter}</p></li>
 													<li>A .pdf of the report will open. DO NOT CLOSE it, we need to save it later.</li>
-													<li>The <p class="instrInLUMS">LUMS report total</span> must match the <span class="instrInSquee">Squee transfer
+													<li>The <span class="instrInLUMS">LUMS report total</span> must match the <span class="instrInSquee">Squee transfer
 														total</span>.</li>
 													<li>This is the 1st run of this report, we will be doing one more after the file build.</li>
-													<div class="tip"><p class="icon far fa-lightbulb"></span>
+													<div class="tip"><span class="icon far fa-lightbulb"></span>
 														&nbsp;The total is on the second to the last and last page.
 													</div>
 
@@ -175,13 +210,13 @@
 														around them.
 													</li>
 														<ol>
-															<li>Put <p class="instrInLUMS">Employer 401k for [work month]
+															<li>Put <span class="instrInLUMS">Employer 401k for [work month]
 																</span>amount into the <span class="instrInSquee">LUMS ER field</span>
 															</li>
-															<li>Put <p class="instrInLUMS">Participant 401k for [work month]
+															<li>Put <span class="instrInLUMS">Participant 401k for [work month]
 																</span>amount into the <span class="instrInSquee">LUMS ER field</span>
 															</li>
-															<li>Put <p class="instrInLUMS">Employer 401k Hours for [work month]
+															<li>Put <span class="instrInLUMS">Employer 401k Hours for [work month]
 																</span>amount into the <span class="instrInSquee">LUMS R/A Hours field</span>
 															</li>
 														</ol>
@@ -249,12 +284,12 @@
 												</ul>
 											</li>
 											<li>Run the Fund Detail Listing again</li>
-												<ol>
+												<ul>
 													<li><p class="instrInLUMS">LUMS Navigation: Main Menu / Labor Union Processing / Fund Detail Processing
 														/ Fund Detail Listing</p></li>
 													<li><p class="instrInLUMS">Keystrokes to type: 4 => {Enter} => S {Enter} => Y => {Enter} V => {Enter}</p></li>
 													<li>A .pdf of the report will open. DO NOT CLOSE it, we need to save it later.</li>
-												</ol>
+												</ul>
 											</li>
 
 											<li>Save All the Supporting Docs</li>
@@ -268,7 +303,7 @@
 													save names. Hotstrings are like autoreplace in MS Word, only better.  One of the hotstrings triggers a backup
 													save of the file build. Since these are irreplaceable, this is not being overly cautious. Save the files
 													in this order:</li></ul>
-												<table class="default" style="width: 65%;">
+												<table class="default" style="width: 75%;">
 													<th>
 														<tr>
 															<td style="width: 15px;"></td>
@@ -413,11 +448,11 @@
 									Here are the steps for processing the transfer without Squee. There are a couple extra steps. You need to update both the
 									EE and ER batch logs.
 								</p>
-							</article>
 
 
 
-						</div>
+
+
 					</div>
 
 				</div>

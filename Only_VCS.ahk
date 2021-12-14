@@ -12,6 +12,7 @@ SetTitleMatchMode 2
 ::pinss::<p class="instrInSquee"></p>
 ::pinss::<p class="instrInSteps"></p>
 ::li4::<li><h4></li></h4>
+::2sp::&nbsp;&nbsp;
 ::tipp::
 send, <div class="tip"><span class="icon far fa-lightbulb"></span>
 send, {Enter}
